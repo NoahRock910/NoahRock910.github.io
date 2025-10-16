@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noah McLaughlin - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CV_CSS.css">
+</head>
+<body>
+  <!-- Cover Screen -->
+  <div id="cover">
+    <!-- Stage 1: Begin Button: Modern web browser dont like stuff being autoplayed but I needed the sick inrto so the button must be pressed-->
+    <div id="begin-stage">
+      <button id="begin-btn">Begin</button>
+    </div>
+
+    <!-- Stage 2: Cover Content -->
+    <div id="cover-content" style="display:none;">
+      <h1>Noah McLaughlins CV</h1>
+      <button onclick="skipToEnd()">Take Me To The Site</button>
+      <br><br>
+      <button onclick="showVideo()">Actually, Give Me A Minute</button>
+      <div id="video-container">
+       <video id="cover-video" controls>
+       <source src="Mp3&4/HaloCences.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+       </video>
+     </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display:none;">
+    <div id="notice-banner">
+     <div class="notice-box">
+      <h2>Notice</h2>
+      <p>This CV was last updated on <span id="last-updated"></span>.</p>
+      <button id="acknowledge-btn">I Understand</button>
+     </div>
+    </div>
+
+    <header>
+      <h1>Noah Mclaughlin</h1>
+    </header>
+
+    <nav>
+      <button class="tablink active" onclick="openTab(event, 'introduction')">Introduction</button>
+      <button class="tablink" onclick="openTab(event, 'education')">Education</button>
+      <button class="tablink" onclick="openTab(event, 'experience')">Experience</button>
+      <button class="tablink" onclick="openTab(event, 'about')">More About Me</button>
+      <button class="tablink" onclick="openTab(event, 'contact')">Contact Me</button>
+    </nav>
+
+    <div class="content">
+      <div id="introduction" class="tab-content active">
+        <h2>Introduction</h2>
+        <p>Hello and welcome to my CV website.
+           I liked the idea of making a website as a CV because a website has way cooler things then a sheet of paper,
+           and I live by the rule of cool. I felt a website allowed for substantial more self-expression and creativity and I truly value that. 
+           For definite throughout my life, I have always been a creative person and that’s not strictly just making projects but with how I tend to live.
+        </p>
+        <br>
+        <p>Computer Science is akin to an outlet for me creatively. I possess a strong passion for problem solving and group environments. 
+          Im convicted in my work ethic and the ability to quickly adapt and learn new skills, such as communication, independence and problem-solving. 
+          I thrive in dynamic environments, enjoy taking on new challenges, and am always looking to evolve through continuous learning. 
+          I am eager to contribute to a team where I can prove myself and grow professionally. 
+        </p>
+        <br>
+        <p>Im seeking employers who believe in their goals and pride themselves on their company culture and workplace environment. 
+          Im seeking employment that will push me forward. Im seeking a place to prove myself in my work.
+        </p>
+      </div>
+
+      <div id="education" class="tab-content">
+        <h2>Education</h2>
+
+        <h4>Primary School: <a href="http://gaelscoilbhuncranncha.ie">Gaelscoil Bhun Cranncha</a></h4>
+        <p>2009-2018</p>
+        <p>I went to a "Gaelscoil" (A School whose primary language is Irish/Gaelige) as a child and I’m happy to say I’ve still retained the language. 
+          My spelling has always been shoddy at best even with English but I’m very capable when it comes to actually speaking the language. 
+          This is where my first introduction to coding came in via <a href="https://scratch.mit.edu/"> Scratch.</a> 
+          I didn’t really care for it honestly. I enjoyed the actual process and idea of coding and I did understand it quickly.
+          However, I wanted to use it as an outlet for my creative writing, and I found the software limiting with what extravagant ideas I had.
+        </p>
+        <br>
+
+        <h4>Secondary School: <a href="https://www.cranacollege.com/">Crana College</a></h4>
+        <p>2018-2023</p>
+        <p>I spent my teenage years developing in a school where the number of prefabs almost equalled the amount of actual classrooms. 
+          It was a single-story Z shaped building and I always happened to get the worst lockers. For the leaving cert I choose computer science which was a new module only in its second year of operation. 
+          It really clicked for me. Every class I was excited to go to and I thrived with the work. Our teacher was underqualified due to him teaching woodworking, technical graphics and then computer science all at leaving cert level. 
+          His way of teaching was practically non-existent; It was more like individual learning than anything, this was not a bad thing, however. 
+          I’d sit by myself with my headphones and crack out python or HTML exercises all day with my wired headphones on and that was blissful for me. 
+          I was aiming for a H1 but sadly my project let me down to a H2 and that was a learning lesson for me.
+          I learned that I needed to plan my projects better, focus on the requirements and not get carried away with my ideas.
+        </p>
+        <br>
+
+        <h4>Third Level: <a href="https://www.atu.ie/campus/donegal-letterkenny">ATU Donegal</a></h4>
+        <p>2023-2026</p>
+        <p>Student <a href="https://www.atu.ie/courses/bachelor-of-science-honours-computer-science">Bachelors in Computer Science (Honours)</a></p>
+        <p>Due to my completion of the leaving cert computer science module, I was eligible to enrol in an accelerated course at ATU Donegal. 
+          This course was cut down to three years while remaining a honours level degree. 
+          Its a broad-based computing course which covers a full range of core topics including programming, databases, networking, machine learning, AI & data science and full team project creation. 
+          We ran through numerous languages such as the basic python, java and html however we also covered MySQL, C and R. 
+          We were also taught based on what was used in industry for example heavy emphasis was put on Agile and other iterative methodologies throughout the course. 
+          For our final year we are assigned a individual project to deliver by the end of the year. 
+          I am excited to do this as project work has always been a fun to me, especially if I feel invested into the project.
+        </p>
+      </div>
+
+      <div id="experience" class="tab-content">
+        <h2>Experience</h2>
+
+        <h4><a href="https://www.articad.com/supplier-partnership-andoras/">Andoras LTD:</a> Production Operative</h4>
+        <p>JUN 2022 - SEPT 2022</p>
+        <p>Operated a mechanical sander alongside another coworker. 
+          According to the correct range and class of sheet, doors would need to be sanded at a certain precise height and a precise number of times before completion. 
+          A wire brush machine was also operated if required in order sheet.
+        </p>
+        <br>
+
+        <h4><a href="https://www.articad.com/supplier-partnership-andoras/">Andoras LTD:</a> Production Operative</h4>
+        <p>JUN 2023 - SEP 2023</p>
+        <p>Used wood filler to finalize a bead within a wooden frame and provided other touching up details such as sanding coarse wood 
+          and filling any damage sustained during its creation.
+        </p>
+        <br>
+
+        <h4><a href="https://www.articad.com/supplier-partnership-andoras/">Andoras LTD:</a> Production Operative</h4>
+        <p>JUN 2024 - SEP 2024</p>
+        <p>Operated independently with a hand sander on pallets of wooden doors before they were to be painted. 
+          Managed a floor of pallets and effectively organized workload so what was needed was ready. 
+          Quickly adapted to changes in order priority and consistently completed my workload efficiently.
+        </p>
+        <br>
+
+        <h4><a href="https://www.articad.com/supplier-partnership-andoras/">Andoras LTD:</a> Production Operative</h4>
+        <p>JUN 2025 - SEP 2025</p>
+        <p>Using a sanding bench and orbital hand sander, sanded down wood post spay paint, 
+          taking care to mend any visible disfigurement or errors to the wood. 
+          Worked consistent overtime amounting to 8 and a half hours of overtime almost every week.
+        </p>
+        <br>
+
+        <h3>What I Gained From This</h3>
+        <p>
+          I worked hard in Andoras. The jobs were demanding and required not only strength 
+          but a calm and focused mindset when deadline pressure weighed down. 
+          Throughout the years I worked both independently and in a team which taugh me valuable skills. 
+          I believe the most important thing I gained through the countless hours of work was a 
+          strong and commited work ethic.
+        </p>
+        <br><br>
+      </div>
+
+      <div id="about" class="tab-content">
+        <h2>More About Me</h2>
+        <h4>Birthday</h4>
+        <p>
+          I was born on the 10th of the 10th which is objectively a sick birthday! 
+          <button onclick="calcDate()">That was in 2005 so I am now...</button>
+        </p>
+        <p id="age"></p>
+        <br>
+
+        <p>I’ve been born and raised in Buncrana, a small coastal town in Donegal which drives its name from being at the bottom of the cranna river. 
+          It’s a beautiful scenic place and I’m really glad to have be raised here but I’m desperate to get out and be on my own. 
+          I was content in my life to live and die in this small town, but I’ve changed and I crave the calling of the city. 
+          I love having things to do and people to meet I think id enjoy all of the social aspects and definitely the night life. 
+          Also, I’m seeking music venues that match more of my style, no harm to trad music it will forever remain in my heart 
+          but they really aren’t the places to mosh.
+        </p>
+        <br>
+
+        <h3>Intrests</h4>
+
+        <h4>Music</h4>
+        <p>I love music but never enough to study and I haven’t learned an instrument (yet, I will buy a drumkit someday). 
+          I started off like most people by listening to embarrassing music and I’ve kept that up till today and probably till death. 
+          My first real music artist I was a fan of was Tyler, the creator (Explains the background music). 
+          I remember the night I listened to his album flowerboy very fondly, it was also the first album I ever listened to. 
+          My music journey continued with more artists and albums but I’ve only recently started attending live shows which I neglected so much. 
+          I’ve gone through many genres throughout my music journey and currently I’m enjoying hardcore and post-hardcore punk rock music. 
+          <button id="errorzone-btn" onclick="toggleErrorZone()">Enter the Errorzone</button>
+        </p>
+        <br>
+
+        <h4>Combat Sports</h4>
+        <p>I’ve always been a wee scraper as a kid, 
+          I grew up with a lot of cousins and brothers and we made pivotal bonding moments while trying to tip each other over. 
+          I took to a karate judo hybrid as a child in between football training and I really found myself thriving, 
+          not only with the techniques but socially. 
+          I not only bonded with other people there but I really put effort in to be patient and help those around me.
+          On my first competition I took home 2 trophies and skipped an entire belt grading 
+          (only a junior belt skip) and it would seem I found a real hobby that I cared about. 
+          It makes it all the more confusing I stopped. 
+          I know at the time I hated football but dropping that was out of the question. 
+          Honestly, I think I settled to just play videogames instead all day instead.
+          I was always a chubby kid but I did get fat over covid despite my pitiful home workout attempts. 
+          At 15 I joined a local boxing club and it might’ve changed my life. 
+          I burned through so much fat and earned a newfound confidence in myself. 
+          However, I could never feel entirely comfortable with sparring and sparring culture. 
+          Egos sometimes were brought into the ring and that was never fun. 
+          I stopped boxing and it wasn’t until the start of my second year of uni where my relationship with BJJ and MMA began.
+          I started off in the Gi which quickly turned into attending no Gi classes and then snowballed into attending every class I could make for a while.
+          Sadly, final year has come and I had to drop the sport in order to meet its demands. I can’t wait to start again if I ever get my free time back.
+          Im forever grateful for the sport and the confidence it instilled in me.
+
+        </p>
+        <br>
+
+        <h4>Creative Writting</h4>
+        <p>We had a creative writing class in fourth class once a week and that was absolutely a time for me to shine. 
+          We'd read out our finished works to the class and id do so eagerly. 
+          Through this I became confident with presenting and learned to love it.  </p>
+        <br>
+
+        <h4>App Creation</h4>
+        <p>My favourite parts of Computer Science have been mixing the code with my creativity. 
+          I adore working on my own projects I find it so rewarding to turn my visions into a tangible product. 
+          I motivate myself to achieve my goals and I believe that’s a crucial part of my strong work ethic. 
+          I love the entire process of app creation from the initial idea, to the planning, to the coding and finally the testing and deployment.
+        </p>
+        <br>
+
+        <h4>Video Production</h4>
+        <p>I used to have a dumb little TikTok page with my friends. 
+          It’s gone now but the enjoyment I got out of creating, planning and performing stuck with me. 
+          It’s a hobby I never really had the time to pursue unfortunately however I do have a real appreciation for it.
+        </p>
+        <br>
+
+        <h4>Video Games</h4>
+        <p>I love video games they are so apart of who I am as a person. 
+          As far as I can remember ive been playing video games, 
+          the ps2 was my first ever console I spent time with playing games like Jak and Daxter and The Prince Of Persia: Warrior Within, 
+          (I should not have been playing Warrior Within at five years old, this is a link to the first boss of the game <a href="https://princeofpersia.fandom.com/wiki/Shahdee">Shahdee </a>).</s> 
+          I did grow up with a lot of Nintendo games too, I loved the Mario games I remember having so much Mario iconography in my room, he was actually apart of it since he was painted on my wall.
+          Down below are three of my favourite games of all time and a breif explanation of why.
+        </p>
+
+         <div class="carousel">
+           <button class="carousel-btn" id="prev">&#10094;</button>
+
+           <div class="carousel-slide">
+             <img id="game-image" src="Images/Red Dead Redemption 2.png" alt="Game Image">
+             <div class="carousel-text">
+               <h4 id="game-title">Red Dead Redemption 2</h4>
+               <p id="game-desc">
+                What a world. The story, the characters, the atmosphere, the graphics, the music, the gameplay; the game is not perfect but the impact it had one me is unmatched by any other game. Red Dead Redemption 2 is my favourite game of all time. I've played it three times and even 100% precented it (Never again).
+               </p>
+              </div>
+            </div>
+           <button class="carousel-btn" id="next">&#10095;</button>
+        </div>
+
+        <br>
+
+        <h3>Traits</h3>
+        
+        <h4>Adaptable</h4>
+        <p>In my life I’ve come to find myself more adaptable than others. 
+          Whether its plans changing or new tools and processes being introduced. 
+          I'm always keen to look ahead to what can be done and I never linger on the past.
+        </p>
+        <br>
+
+        <h4>Independent</h4>
+        <p>I enjoy the process of working on my own.
+           I hold myself responsible and find myself really getting in the zone.
+           As someone who likes to write I’ve learned a lot through the process and I can apply such lessons into my work ethic.
+        </p>
+        <br>
+
+        <h4>Problem Solving</h4>
+        <p>I find problem solving and even problem obsession to be highly entertaining, 
+          even with the immense frustration that is bound to tough issues. 
+          The satisfaction of a working solution is quite a peak of programming.
+        </p>
+        <br>
+
+        <h4>Team Player</h4>
+        <p>I really gain a lot from teamwork. 
+          I thrive in a team environment, and I strive to uplift my team and communicate effectively. 
+          I’m very quick to find my footing and with the right team I can really push myself to do my best work.
+        </p>
+        <br>
+
+        <h4>Organised</h4>
+        <p>
+          I like to keep my workspace and my mind clear. 
+          I find that being organised helps me focus and be more productive. 
+          I’m always eager to keep my tasks and goals in order so I can tackle them efficiently.
+        </p>
+        <br>
+
+        <h4>Creative</h4>
+        <p>
+          I absolutely pride myself on my creative thinking. It’s a core part of who I am. 
+          I love to think outside the box and come up with innovative solutions. 
+          It’s a blessing in my work and in my life. 
+          Thats why I love computer science so much.
+          It allows me to express my creativity in a technical way. 
+          Thats why I love making apps, websites and projects.
+        </p>
+        <br>
+
+        <h3>Skills</h3>
+
+        <h4>Languages</h4>
+        <ul>
+          <li>Python - Proficient</li>
+          <li>Java - Proficient</li>
+          <li>HTML/CSS/JS - Proficient</li>
+          <li>MySQL - Intermediate</li>
+          <li>C - Basic</li>
+          <li>R - Basic</li>
+        </ul>
+
+        <br>
+
+        <h4>Software</h4>
+        <ul>
+          <li>Git/GitHub</li>
+          <li>Visual Studio Code</li>
+          <li>Spyder</li>
+          <li>Eclipse</li>
+          <li>Anaconda</li>
+          <li>Google Colab</li>
+          <li>Azure Labs</li>
+          <li>Jupyter Notebooks</li>
+          <li>Django</li>
+          <li>Microsoft Office</li>
+          <li>Adobe Premiere Pro</li>
+          <li>Linux (Ubuntu)</li>
+          <li>Static & Dynamic Analysis Tools</li>
+        </ul>
+
+        <br>
+
+        <h4>Technical Skills</h4>
+        <ul>
+          <li>Data Analysis</li>
+          <li>Unified Modelling Language (UML)</li>
+          <li>Software Development Lifecycle</li>
+          <li>Machine Learning</li>
+          <li>Cloud Computing</li>
+          <li>Server Side Scripting</li>
+          <li>IT Infrastructure</li>
+          <li>Network Security</li>
+          <li>Dev Ops</li>
+          <li>Client Side Scripting</li>
+          <li>Databases</li>
+          <li>Unit Testing</li>
+          <li>Secure Programming</li>
+          <li>Operating Systems</li>
+          <li>User Interface and Experience Design</li>
+        </ul>
+
+      </div>
+
+      <div id="contact" class="tab-content">
+        <h2>Contact Me</h2>
+        <p>Noah McLaughlin</p>
+        <p>Noahrock910@gmail.com</p>
+        <p>+353 (85) 713 1829</p>
+
+        <p><a href="https://github.com/NoahRock910">GitHub</a></p>
+        <p><a href="www.linkedin.com/in/NoahMCL910">LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Intro Audio (plays once at start) -->
+  <audio id="intro-audio" src="Mp3&4/haloOst.mp3"></audio>
+
+  <!-- Playlist Audio (loop through playlist after enterSite) -->
+  <audio id="bg-audio"></audio>
+
+  <!-- Music Player (hidden until enterSite) -->
+  <div id="music-player" style="display:none;">
+   <div id="player-header">
+    <button id="toggle-player">▼</button>
+   </div>
+   <div id="player-body">
+     <img id="cd-icon" src="Images/cd.png" alt="CD Icon">
+     <div class="track-info">
+       <p id="track-title">Song Title</p>
+       <p id="track-artist">Artist Name</p>
+     </div>
+     <div class="controls">
+       <button id="mute-btn">Mute</button>
+       <a id="spotify-link" href="https://open.spotify.com/playlist/4ZV6n3ggzEVqGvPcCwdbcp?si=H17A5wdqT2ao1lN0nf3PEg" target="_blank">Spotify Playlist</a>
+     </div>
+   </div>
+ </div>
+
+ <script src="CV_JS.js"></script>
+</body>
+</html>
