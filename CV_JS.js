@@ -157,7 +157,7 @@ function setLastUpdated() {
     month: "long",
     day: "numeric"
   });
-  lastUpdated.textContent = formattedDate;
+  lastUpdated.textContent = "7/16/26";
 }
 
 function enterSite() {
