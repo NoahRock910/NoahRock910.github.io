@@ -8,8 +8,30 @@
   <link rel="stylesheet" href="CV_CSS.css">
 </head>
 <body>
+  <!-- Cover Screen -->
+  <div id="cover">
+    <!-- Stage 1: Begin Button: Modern web browser dont like stuff being autoplayed but I needed the sick inrto so the button must be pressed-->
+    <div id="begin-stage">
+      <button id="begin-btn">Begin</button>
+    </div>
+
+    <!-- Stage 2: Cover Content -->
+    <div id="cover-content" style="display:none;">
+      <h1>Noah McLaughlins CV</h1>
+      <button onclick="skipToEnd()">Take Me To The Site</button>
+      <br><br>
+      <button onclick="showVideo()">Actually, Give Me A Minute</button>
+      <div id="video-container">
+       <video id="cover-video" controls>
+       <source src="Mp3&4/HaloCences.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+       </video>
+     </div>
+    </div>
+  </div>
+
   <!-- Main Content -->
-  <div id="main-content">
+  <div id="main-content" style="display:none;">
     <div id="notice-banner">
      <div class="notice-box">
       <h2>Notice</h2>
@@ -33,7 +55,7 @@
     <div class="content">
       <div id="introduction" class="tab-content active">
         <h2>Introduction</h2>
-        <p>Hello and welcome to my CV website. I'm a fresh Computer Science (hons) graduate who just received a first and will be graduating in October.
+        <p>Hello and welcome to my CV website.
            I liked the idea of making a website as a CV because a website has way cooler things then a sheet of paper,
            and I live by the rule of cool. I felt a website allowed for substantial more self-expression and creativity and I truly value that. 
            For definite throughout my life, I have always been a creative person and that’s not strictly just making projects but with how I tend to live.
@@ -84,8 +106,7 @@
           We ran through numerous languages such as the basic python, java and html however we also covered MySQL, C and R. 
           We were also taught based on what was used in industry for example heavy emphasis was put on Agile and other iterative methodologies throughout the course. 
           For our final year we are assigned a individual project to deliver by the end of the year. 
-          I really enjoyed working on my own project, it was a great creative outlet and im looking foward to producing more projects in the future.
-          I graduated from ATU Donegal with a first in Computer Science (Hons). Im really proud of myself and will be graduating in October!
+          I am excited to do this as project work has always been a fun to me, especially if I feel invested into the project.
         </p>
       </div>
 
